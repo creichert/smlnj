@@ -1,0 +1,2 @@
+Skeleton 5
+d3aå¢RedBlack"i1aä¢B"è0jh1egp1ÿÿaã¢LEXGEN"ÿad"LexGen"jh9c2egp1d"Array"egp1ä¢List"f1ä¢TextIO"aä¢dict"ÿegp1ÿ Cf5Cä¢Int"d"Char"ÿä¢String"ÿNaä¢L"ÿaä¢RB"jgp1ÿ‚gp1ÿbd2bd2egp1ÿ‚f2ÿ4d"StringCvt"f0f2ÿ4ÿf1ÿ4f5Cd"OS"ÿ4ÿ‚ÿd"Substring"NNgp1ÿ#

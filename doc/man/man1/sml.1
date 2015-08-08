@@ -1,0 +1,211 @@
+'\" t
+.\"     Title: sml
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 12/21/2014
+.\"    Manual: \ \&
+.\"    Source: SML/NJ 110.77
+.\"  Language: English
+.\"
+.TH "SML" "1" "12/21/2014" "SML/NJ 110\&.77" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+sml \- an interactive Standard ML system
+.SH "SYNOPSIS"
+.sp
+\fBsml\fR [\fISML\-OPTIONS\fR] [\fIOPTIONS\fR] [\fIFILES\fR]
+.SH "DESCRIPTION"
+.sp
+It is an incremental, interactive compiler that accepts declarations and expressions to be evaluated from standard input\&.
+.SH "OPTIONS"
+.PP
+\fB@SMLload\fR=\fIIMAGE\fR
+.RS 4
+specifies heap image
+.RE
+.PP
+\fB@SMLrun\fR=\fIRUNTIME\fR
+.RS 4
+specifies runtime system
+.RE
+.PP
+\fB@SMLversion\fR
+.RS 4
+echo the version of SML/NJ to standard output and then exit
+.RE
+.PP
+\fB@SMLsuffix\fR
+.RS 4
+echo the heap suffix for the system to standard output and then exit
+.RE
+.PP
+\fB@SMLalloc\fR=\fISIZE\fR
+.RS 4
+Specify the prefered sice of the
+.RE
+.PP
+\fB@SMLcmdname\fR=\fINAME\fR
+.RS 4
+set the command name; this is the value returned by
+CommandLine\&.name()\&.
+.RE
+.PP
+\fB@SMLverbose\fR
+.RS 4
+show heap image load progress
+.RE
+.PP
+\fB@SMLquiet\fR
+.RS 4
+load heap image silently (default)
+.RE
+.PP
+\fB@SMLobjects\fR
+.RS 4
+show list of executable objects
+.RE
+.PP
+\fB@SMLdebug\fR=\fIFILE\fR
+.RS 4
+write debugging info to file
+.RE
+.PP
+\fB\-C\fR\fIctl\fR=\fIvalue\fR
+.RS 4
+set the control
+\fIctl\fR
+to
+\fIvalue\fR\&.
+.RE
+.PP
+\fB\-D\fR\fIname\fR=\fIvalue\fR
+.RS 4
+define the CM variable
+\fIname\fR
+to have the given value\&.
+.RE
+.PP
+\fB\-D\fR\*(Aqname
+.RS 4
+define the CM variable
+\fIname\fR
+to have the value 1\&.
+.RE
+.PP
+\fB\-U\fR\fIname\fR
+.RS 4
+remove any definition of the CM variable
+\fIname\fR\&.
+.RE
+.PP
+\fB\-H\fR
+.RS 4
+produce complete help listing
+.RE
+.PP
+\fB\-h\fR
+.RS 4
+produce minimal help listing
+.RE
+.PP
+\fB\-h\fR\fIlevel\fR
+.RS 4
+help with obscurity limit
+.RE
+.PP
+\fB\-S\fR
+.RS 4
+list all the controls along with their default value
+.RE
+.PP
+\fB\-s\fR\fIlevel\fR
+.RS 4
+limited list of settings\&. The number of levels of the control heirarchy is controled by
+\fIlevel\fR, with 0 printing just the root of the heirarchy\&.
+.RE
+.PP
+\fB\-E\fR
+.RS 4
+list all the controls along with their corresponding environment variables
+.RE
+.PP
+\fB\-e\fR\fIlevel\fR
+.RS 4
+limited list of environment variables; The number of levels of the control heirarchy is controled by
+\fIlevel\fR, with 0 printing just the root of the heirarchy\&.
+.RE
+.PP
+\fB\-m\fR
+.RS 4
+switch to CM\&.make
+.RE
+.PP
+\fB\-a\fR
+.RS 4
+switch to CM\&.autoload; default
+.RE
+.PP
+\fIfile\&.cm\fR
+.RS 4
+run
+CM\&.make
+or
+CM\&.autoload
+on
+\fIfile\&.cm\fR
+and then return to the SML prompt\&. Which command is run is determined by the
+\fB\-m\fR
+and
+\fB\-a\fR
+flags\&.
+.RE
+.PP
+\fIfile\&.sig\fR
+.RS 4
+execute
+use\fIfile\&.sig\fR
+before entering the SML top\-level loop\&.
+.RE
+.PP
+\fIfile\&.sml\fR
+.RS 4
+(use) execute
+use\fIfile\&.sml\fR
+before entering the SML top\-level loop\&.
+.RE
+.PP
+\fIfile\&.fun\fR
+.RS 4
+(use) execute
+use\fIfile\&.fun\fR
+before entering the SML top\-level loop\&.
+.RE
+.SH "AUTHOR"
+.sp
+sml(1) was originally created by Andrew Appel and David MacQueen in 1987\&. The system is currently maintained by David MacQueen and John Reppy\&.
+.SH "COPYING"
+.sp
+Copyright \(co 2014 The Fellowship of SML/NJ
+.sp
+This is free software; see the source for copying conditions\&. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&.
+.SH "SEE-ALSO"
+.sp
+smlnj(7)

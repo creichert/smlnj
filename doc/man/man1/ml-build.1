@@ -1,0 +1,98 @@
+'\" t
+.\"     Title: ml-build
+.\"    Author: [FIXME: author] [see http://docbook.sf.net/el/author]
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 12/21/2014
+.\"    Manual: \ \&
+.\"    Source: SML/NJ 110.77
+.\"  Language: English
+.\"
+.TH "ML\-BUILD" "1" "12/21/2014" "SML/NJ 110\&.77" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+ml-build \- command\-line build tool for SML/NJ programs
+.SH "SYNOPSIS"
+.sp
+\fBml\-build\fR [\fIOPTIONS\fR] \fIgroup\&.cm\fR [\fImain\fR [\fIheap\-image\fR]]
+.SH "DESCRIPTION"
+.sp
+The \fBml\-build\fR is a command\-line tool for building applications from SML source files using the Compilation Manager and SML/NJ compiler\&.
+.SH "OPTIONS"
+.PP
+\fB\-C\fR\fIctl\fR=\fIvalue\fR
+.RS 4
+set the control
+\fIctl\fR
+to
+\fIvalue\fR\&.
+.RE
+.PP
+\fB\-D\fR\fIname\fR=\fIvalue\fR
+.RS 4
+define the CM variable
+\fIname\fR
+to have the given value\&.
+.RE
+.PP
+\fB\-D\fR\*(Aqname
+.RS 4
+define the CM variable
+\fIname\fR
+to have the value 1\&.
+.RE
+.PP
+\fB\-U\fR\fIname\fR
+.RS 4
+remove any definition of the CM variable
+\fIname\fR\&.
+.RE
+.PP
+\fB\-S\fR \fIsetup\&.cm\fR
+.RS 4
+load and execute the code specified by the CM file
+\fIsetup\&.cm\fR
+prior to the main build process\&. This option allows one to customizes the compiler via side\-effect\&.
+.RE
+.SH "EXAMPLES"
+.PP
+ml\-build sources\&.cm, ml\-build sources\&.cm Main\&.main, ml\-build sources\&.cm Main\&.main prog
+.RS 4
+AUTHOR
+.RE
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+Written by Matthias Blume\&.
+
+COPYING
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+Copyright \(co 2014 The Fellowship of SML/NJ
+.sp
+This is free software; see the source for copying conditions\&. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&.
+.SH "SEE-ALSO"
+.sp
+ml\-makedepend(1), sml(1), smlnj(7)

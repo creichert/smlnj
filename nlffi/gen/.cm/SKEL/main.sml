@@ -1,0 +1,2 @@
+Skeleton 5
+d2f5C‰¢OS"d"Gen"d"Int"d"Char"d"List"Cd"SizesPPC"d"SizesX86"d"String"‰¢TextIO"d"EndianLittle"Cd"DefaultEndian"d"EndianBig"d"SizesSparc"d"DefaultSizes"d"DefaultName"Nad"Main"h1bad"RE"jh2ad"P"gp1d"AwkSyntax"ad"E"gp1d"DfaEngine"gp1e"RegExpFn"f4ˇˇÅd"General"d"SMLofNJ"

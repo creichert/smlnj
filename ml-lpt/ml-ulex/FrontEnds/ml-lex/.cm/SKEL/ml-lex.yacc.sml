@@ -1,0 +1,2 @@
+Skeleton 5
+ae"MLLexLrValsFun"i2aдўToken"gp1c"TOKEN"f5CдўChar"d"Word"дўString"ядўAtomMap"Njh2aдўParserData"h7aдўHeader"h3aдўS"gp1d"LexSpec"aдўRE"gp1d"RegExp"aдўSIS"gp2я‚d"SymSet"aдўLrTable"gp2яя‚)Caяgp1яbезр±я‚)f6я+Cd"List"я9d"General"я‚)d"Array"Nbезр±яЃ#d2f5CяЃ/я‚я‚d"UTF8"дўAtomSet"NaдўMlyValue"и0ad"EC"h2яѓbяѓ1ж±я„ad"Actions"h2bяѓ1f9яЃ/я‚я‚d"Atom"Cя9я‚)яЃя„я„Nя„5NaдўTokens"jя„$зр±гўMLLex_TOKENS"h2aяЃgp1c"PARSER_DATA"aя…2я…?

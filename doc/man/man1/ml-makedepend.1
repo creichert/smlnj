@@ -1,0 +1,110 @@
+'\" t
+.\"     Title: ml-makedepend
+.\"    Author: [see the "AUTHOR" section]
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 12/21/2014
+.\"    Manual: \ \&
+.\"    Source: SML/NJ 110.77
+.\"  Language: English
+.\"
+.TH "ML\-MAKEDEPEND" "1" "12/21/2014" "SML/NJ 110\&.77" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+ml-makedepend \- makefile dependency generator for SML/NJ programs
+.SH "SYNOPSIS"
+.sp
+\fBml\-makedepend\fR [\fIOPTIONS\fR] \fIproject\&.cm\fR \fItarget\fR
+.SH "DESCRIPTION"
+.sp
+\fBml\-makedepend\fR is a tool for generating dependency information to allow the Unix \fBmake\fR(1) program to be used to build SML/NJ programs\&.
+.SH "OPTIONS"
+.PP
+\fB\-f\fR \fImakefile\fR
+.RS 4
+Specify the name of the makefile to which the dependency information is appended\&. If this option is
+\fInot\fR
+given, then the output is appended to the end of the file
+makefile
+(or
+Makefile)\&. It is an error if neither file exists and the
+\fB\-f\fR
+option is not specified\&.
+.RE
+.PP
+\fB\-a\fR \fIarch\fR
+.RS 4
+specifies the name a make variable for architecture\-specific filenames and paths (the default is
+ARCH)\&.
+.RE
+.PP
+\fB\-o\fR \fIos\fR
+.RS 4
+specifies the name a make variable for operating\-system\-specific filenames and paths (the default is
+OPSYS)\&.
+.RE
+.PP
+\fB\-n\fR
+.RS 4
+generates full filenames and paths with any architecture or operating\-system\-specific parts expanded out to their definition for the host system\&. If this option is specified, then any
+\fB\-a\fR
+and
+\fB\-o\fR
+options are ignored\&.
+.RE
+.PP
+\fB\-C\fR\fIctl\fR=\fIvalue\fR
+.RS 4
+set the control
+\fIctl\fR
+to
+\fIvalue\fR\&.
+.RE
+.PP
+\fB\-D\fR\fIname\fR=\fIvalue\fR
+.RS 4
+define the CM variable
+\fIname\fR
+to have the given value\&.
+.RE
+.PP
+\fB\-D\fR\*(Aqname
+.RS 4
+define the CM variable
+\fIname\fR
+to have the value 1\&.
+.RE
+.PP
+\fB\-U\fR\fIname\fR
+.RS 4
+remove any definition of the CM variable
+\fIname\fR\&.
+.RE
+.SH "AUTHOR"
+.sp
+\fBml\-makedepend\fR(1) was written by Matthias Blume\&.
+.SH "COPYING"
+.sp
+Copyright \(co 2014 The Fellowship of SML/NJ
+.sp
+This is free software; see the source for copying conditions\&. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE\&.
+.SH "SEE-ALSO"
+.sp
+\fBml\-build\fR(1), \fBsml\fR(1), \fBsmlnj\fR(7)

@@ -1,0 +1,2 @@
+Skeleton 5
+d7aã¢SORT_ARG"è0aã¢SORT"ÿCaã¢EQUIV_ARG"ÿaã¢EQUIV"ÿaå¢MergeSortFun"i2aä¢A"gp1ÿf1ÿjÿgp1ÿaå¢EquivFun"i1aÿgp1ÿjh3c2egp1ä¢Array"egp1d"List"f2ÿÿ>ad"Sort"jÿgp1ÿ6gp1ÿ+ae"ShrinkLrTableFun"i1aä¢LrTable"gp1c"LR_TABLE"jh4aÿƒçğ±ÿƒeÿƒ$aä¢ActionEntryList"ÿad"EquivActionList"jgp1ÿƒ/gp1ÿgp1c"SHRINK_LR_TABLE"N
