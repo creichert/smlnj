@@ -1,0 +1,4 @@
+
+# SMLNJ Git Mirror
+
+    make
