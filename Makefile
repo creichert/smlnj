@@ -17,9 +17,12 @@ install: bin/.heap/sml.x86-linux
 	done
 
 clean:
-	rm -rf *.tgz base bin cml config lib \
+	rm -rf base cml config lib \
 		ml-lex ml-lpt MLRISC ml-yacc \
 		smlnj-lib trace-debug-profile \
 		ml-burg doc ckit nlffi
+
+reallyclean: clean
+	rm -rf bin *.tgz
 
 .PHONY: clean install all
