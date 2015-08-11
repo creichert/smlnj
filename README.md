@@ -2,6 +2,7 @@
 # SMLNJ Git Mirror
 
     make
+    ./bin/sml
 
 # Versions
 
